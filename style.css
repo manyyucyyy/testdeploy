@@ -1,0 +1,55 @@
+body {
+  background-color: #f5f5dc; /* warna background body */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  width: 80%; /* ukuran card-container */
+  margin: 0 auto;
+}
+
+.card {
+  width: 100%; /* ukuran card */
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* warna gradasi untuk setiap card */
+.card:nth-child(1) {
+  background: linear-gradient(to right, #ff8177, tomato, #ff8c7f);
+}
+
+.card:nth-child(2) {
+  background: linear-gradient(to right, #fdcbf1, #fdcbf1, #e6dee9);
+}
+
+.card:nth-child(3) {
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+}
+
+.card:hover {
+  background: linear-gradient(to right, #e0e0e0, #f5f5dc);
+  transform: scale(1.1); /* efek zoom ketika dihover */
+  cursor: pointer; /* mengubah cursor menjadi pointer ketika dihover */
+  transition: all 0.7s ease-in-out; /* animasi transisi warna dan zoom ketika dihover */
+}
+
+.card:hover h3 {
+  color: lightyellow;
+}
+
+.card:hover {
+  border: 2px solid black;
+}
